@@ -10,5 +10,6 @@
     <input type="hidden" name="name" value="{{ $product->name }}">
     <input type="hidden" name="qty" value="1">
     <input type="hidden" name="price" value="{{ $product->price }}">
+    <input type="hidden" name="weight" value="0">
     <input type="submit">
 </form>
