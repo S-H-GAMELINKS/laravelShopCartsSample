@@ -37,7 +37,11 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new Product();
+
+        $product->fill($request->all())->save();
+
+        return redirect()->route('products.show', $product);
     }
 
     /**
